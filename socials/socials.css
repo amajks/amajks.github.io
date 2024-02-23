@@ -1,0 +1,58 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    margin: 0;
+    color: #333;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo img {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a soft shadow effect */
+    transition: transform 0.3s ease; /* Add a smooth transition on hover */
+}
+
+.logo img:hover {
+    transform: scale(1.05); /* Increase size on hover */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease; /* Add a smooth transition on hover */
+}
+
+.social-links a img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px); /* Add slight upward movement on hover */
+}
