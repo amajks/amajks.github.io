@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store</title>
-    <link rel="stylesheet" href="https://amajks.github.io/shop/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="https://amajks.github.io/">Home</a></li>
-            <li><a href="#">Discord</a></li>
-            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#mods">Mods</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
@@ -21,19 +23,56 @@
         <p>Discover our exclusive collection of high-quality products.</p>
     </header>
 
-    <div class="store">
-        <div class="product" onclick="showPopup('Product 1', 'Description of Product 1', 'https://example.com/product1')">
-            <img src="https://amajks.github.io/shop/products/product1.jpg" alt="Product 1">
-            <p class="name">Product 1</p>
-            <p class="price">$10.00</p>
+    <section id="games" class="store-section">
+        <h2>Games</h2>
+        <div class="store">
+            <div class="product" onclick="showPopup('Game 1', 'Description of Game 1', 'https://example.com/game1')">
+                <img src="game1.jpg" alt="Game 1">
+                <p class="name">Game 1</p>
+                <p class="price">$20.00</p>
+            </div>
+            <div class="product" onclick="showPopup('Game 2', 'Description of Game 2', 'https://example.com/game2')">
+                <img src="game2.jpg" alt="Game 2">
+                <p class="name">Game 2</p>
+                <p class="price">$25.00</p>
+            </div>
+            <!-- Add more games as needed -->
         </div>
-        <div class="product" onclick="showPopup('Product 2', 'Description of Product 2', 'https://example.com/product2')">
-            <img src="https://amajks.github.io/shop/products/product2.jpg" alt="Product 2">
-            <p class="name">Product 2</p>
-            <p class="price">$15.00</p>
+    </section>
+
+    <section id="mods" class="store-section">
+        <h2>Mods</h2>
+        <div class="store">
+            <div class="product" onclick="showPopup('Mod 1', 'Description of Mod 1', 'https://example.com/mod1')">
+                <img src="mod1.jpg" alt="Mod 1">
+                <p class="name">Mod 1</p>
+                <p class="price">$5.00</p>
+            </div>
+            <div class="product" onclick="showPopup('Mod 2', 'Description of Mod 2', 'https://example.com/mod2')">
+                <img src="mod2.jpg" alt="Mod 2">
+                <p class="name">Mod 2</p>
+                <p class="price">$7.00</p>
+            </div>
+            <!-- Add more mods as needed -->
         </div>
-        <!-- Add more products as needed -->
-    </div>
+    </section>
+
+    <section id="services" class="store-section">
+        <h2>Services</h2>
+        <div class="store">
+            <div class="product" onclick="showPopup('Service 1', 'Description of Service 1', 'https://example.com/service1')">
+                <img src="service1.jpg" alt="Service 1">
+                <p class="name">Service 1</p>
+                <p class="price">$50.00</p>
+            </div>
+            <div class="product" onclick="showPopup('Service 2', 'Description of Service 2', 'https://example.com/service2')">
+                <img src="service2.jpg" alt="Service 2">
+                <p class="name">Service 2</p>
+                <p class="price">$75.00</p>
+            </div>
+            <!-- Add more services as needed -->
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2024 Your Store. All rights reserved.</p>
@@ -48,6 +87,6 @@
         </div>
     </div>
 
-    <script src="https://amajks.github.io/shop/scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
