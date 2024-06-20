@@ -6,7 +6,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
 }
 
 nav {
@@ -43,7 +44,7 @@ nav ul li a:hover {
 
 header {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 80px;
     margin-bottom: 20px;
 }
 
@@ -58,24 +59,11 @@ header p {
     margin-top: 10px;
 }
 
-.store-section {
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-.store-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #ffffff;
-}
-
 .store {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
+    padding: 20px;
 }
 
 .product {
@@ -167,7 +155,6 @@ footer p {
     right: 10px;
     font-size: 1.5em;
     cursor: pointer;
-    color: #ffffff;
 }
 
 .popup-content h2 {
