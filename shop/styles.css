@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    overflow: hidden;
+    overflow: auto;
 }
 
 nav {
@@ -59,11 +59,24 @@ header p {
     margin-top: 10px;
 }
 
+.store-section {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.store-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
 .store {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 20px;
+    justify-content: center;
 }
 
 .product {
